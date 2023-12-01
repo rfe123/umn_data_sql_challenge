@@ -30,5 +30,5 @@ salary FLOAT
 
 titles
 -
-title_id VARCHAR(5)
+title_id VARCHAR(5) PK
 title VARCHAR(30)
