@@ -16,7 +16,7 @@ emp_no INTEGER FK - employees.emp_no
 employees
 -
 emp_no INTEGER PK
-emp_title_id INTEGER FK - titles.title_id
+emp_title_id VARCHAR(5) FK - titles.title_id
 birth_date DATE
 first_name VARCHAR(30)
 last_name VARCHAR(30)
