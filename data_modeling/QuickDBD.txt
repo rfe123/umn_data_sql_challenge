@@ -1,26 +1,26 @@
 departments
 -
-dept_no VARCHAR(4) PK
-dept_name VARCHAR(30)
+dept_no VARCHAR(25) PK
+dept_name VARCHAR(50)
 
 dept_emp
 -
 emp_no INTEGER PK FK >- employees.emp_no
-dept_no VARCHAR(4) FK >- departments.dept_no
+dept_no VARCHAR(25) FK >- departments.dept_no
 
 dept_manager
 -
-dept_no VARCHAR(4) FK - departments.dept_no
+dept_no VARCHAR(25) FK - departments.dept_no
 emp_no INTEGER FK - employees.emp_no
 
 employees
 -
 emp_no INTEGER PK
-emp_title_id VARCHAR(5) FK - titles.title_id
+emp_title_id VARCHAR(25) FK - titles.title_id
 birth_date DATE
 first_name VARCHAR(30)
 last_name VARCHAR(30)
-sex VARCHAR(1)
+sex VARCHAR(3)
 hire_date DATE
 
 salaries
@@ -30,5 +30,5 @@ salary FLOAT
 
 titles
 -
-title_id VARCHAR(5) PK
-title VARCHAR(30)
+title_id VARCHAR(25) PK
+title VARCHAR(50)
