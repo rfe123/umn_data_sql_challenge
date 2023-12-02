@@ -47,9 +47,8 @@ CREATE TABLE dept_manager (
 );
 
 CREATE TABLE salaries (
-    id INTEGER PRIMARY KEY,
     emp_no INTEGER,
-    salary float,
+    salary INTEGER,
     CONSTRAINT fk_emp (
       FOREIGN KEY(emp_no) 
 	  REFERENCES employees(emp_no))
