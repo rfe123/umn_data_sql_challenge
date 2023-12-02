@@ -76,3 +76,8 @@ WHERE dept_emp.dept_no IN
 
 
 --List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name) (4 points)
+SELECT COUNT(emp_no) AS "Name Count",
+	last_name
+FROM employees
+GROUP BY last_name
+ORDER BY "Name Count" DESC
